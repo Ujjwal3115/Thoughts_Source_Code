@@ -1,0 +1,723 @@
+@supports not (backdrop-filter: blur(10px)) {
+    .login-box {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
+*,
+*::before,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+        font-family: "League Spartan", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding:  0.9rem 0;
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+main {
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99)
+}
+
+.bg-img {
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 350px);
+    left: calc(50% - 40px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+} 
+
+
+.fog-7 {
+    position: absolute;
+    z-index: 2; 
+    width: 1900px;
+    top: calc(50% - 100px);
+    left: calc(50% + 700px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-10 {
+    position: absolute;
+    z-index: 3; 
+    width: 892px;
+    top: calc(50% + 69px);
+    left: calc(50% + 230px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-6 {
+    position: absolute;
+    z-index: 4; 
+    width: 100%;
+    top: calc(50% + 85px);
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-9 {
+    position: absolute;
+    z-index: 5; 
+    width: 470px;
+    top: calc(50% + 113px);
+    left: calc(50% - 457px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-8 {
+    position: absolute;
+    z-index: 6; 
+    width: 880px;
+    top: calc(50% + 120px);
+    left: calc(50% - 202px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-5 {
+    position: absolute;
+    z-index: 7; 
+    width: 450px;
+    top: calc(50% + 160px);
+    left: calc(50% + 20px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-7 {
+    position: absolute;
+    z-index: 8; 
+    width: 538px;
+    top: calc(50% + 123px);
+    left: calc(50% + 305px);
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    z-index: 9;
+    bottom: 550px; /* Changed from top positioning to bottom */
+    left: 250px; /* Adjusted left position */
+    transform: none; /* Removed the transform */
+    text-align: left; /* Changed from center to left */
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #e3ff73;
+}
+
+.text h2 {
+    font-weight: 600;
+    font-size: 5rem; /* Reduced font size */
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-weight: 300;
+    font-size: 1.3rem; /* Reduced font size */
+    margin-left: 5px;
+}
+
+.mountain-6 {
+    position: absolute;
+    z-index: 10; 
+    width: 408px;
+    top: calc(50% + 60px);
+    left: calc(50% + 590px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-4 {
+    position: absolute;
+    z-index: 11; 
+    width: 590px;
+    top: calc(50% + 223px);
+    left: calc(50% - 60px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-5 {
+    position: absolute;
+    z-index: 12; 
+    width: 625px;
+    top: calc(50% + 250px);
+    left: calc(50% + 130px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-3 {
+    position: absolute;
+    z-index: 13; 
+    width: 1600px;
+    top: calc(50% + 110px);
+    left: calc(50% - 15px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-4 {
+    position: absolute;
+    z-index: 14; 
+    width: 780px;
+    top: calc(50% + 196px);
+    left: calc(50% - 381.5px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-3 {
+    position: absolute;
+    z-index: 15; 
+    width: 500px;
+    top: calc(50% + 196px);
+    left: calc(50% + 750px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-2 {
+    position: absolute;
+    z-index: 16; 
+    width: 200px;
+    top: calc(50% + 196px);
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-2 {
+    position: absolute;
+    z-index: 17; 
+    width: 690px;
+    top: calc(50% + 155px);
+    left: calc(50% + 400px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-1 {
+    position: absolute;
+    z-index: 18; 
+    width: 550px;
+    top: calc(50% + 80px);
+    left: calc(50% - 620px);
+    transform: translate(-50%, -50%);
+}
+
+.sun-rays {
+    position: absolute;
+    z-index: 19;
+    width: 595px;
+    top:0;
+    right:0; 
+}
+
+.black-shadow {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.fog-1 {
+    position: absolute;
+    z-index: 21; 
+    width: 1600px;
+    top: calc(100% - 355px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vignette {
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0) 65%,
+        rgba(0, 0, 0, 0.65) 100%
+    );
+}
+
+
+
+
+/* theme button  */
+.theme-toggle {
+    z-index: 24;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sun-icon {
+    display: none;
+}
+
+.moon-icon {
+    display: block;
+}
+
+/* Add styles for dark theme */
+body.dark-theme .theme-toggle .sun-icon {
+    display: block;
+}
+
+body.dark-theme .theme-toggle .moon-icon {
+    display: none;
+}
+
+
+
+
+/* Login box  */
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Changed from right: 10% to left: 50% */
+    transform: translate(-50%, -50%); /* Changed to center both horizontally and vertically */
+    width: 400px; /* Increased width for better spacing */
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 23;
+}
+
+
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #e3ff73;
+    font-size: 12px;
+}
+
+.login-box a {
+    position: center;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+
+
+}
+
+.login-box a:hover {
+    background: #e3ff73d2;
+    color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #e3ff73d2,
+                0 0 25px #e3ff73d2,
+                0 0 50px #e3ff73d2,
+                0 0 100px #e3ff73d2;
+}
+
+.login-box a span {
+    display: block;
+} 
+
+.login-box {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
+}
+
+.submit-btn {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 40px auto 20px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    border: 1px solid #e3ff73;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-btn:hover {
+    background: #e3ff73d2;
+    color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #e3ff73d2,
+                0 0 25px #e3ff73d2,
+                0 0 50px #e3ff73d2,
+                0 0 100px #e3ff73d2;
+}
+
+.submit-btn span {
+    position: absolute;
+    display: block;
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.login-link a {
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-link a span {
+    color: #e3ff73;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    background: none;
+    box-shadow: none;
+}
+
+
+/* Add this after the last login-box related style (after .signup-link b:hover) */
+.verification-options {
+    margin: 20px 0;
+    color: #fff;
+}
+
+.verification-options p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.radio-option {
+    position: relative;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-option label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid rgba(227, 255, 115, 0.3);
+    border-radius: 15px;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.radio-option label i {
+    font-size: 20px;
+    color: #e3ff73;
+    transition: all 0.1s ease;
+}
+
+.radio-option input[type="radio"]:checked + label {
+    background: rgba(227, 255, 115, 0.1);
+    border-color: #e3ff73;
+    box-shadow: 0 0 15px rgba(227, 255, 115, 0.3);
+}
+
+.radio-option label:hover {
+    background: rgba(227, 255, 115, 0.1);
+    border-color: #e3ff73;
+    transform: translateY(-2px);
+}
+
+.radio-option input[type="radio"]:checked + label i {
+    transform: scale(1.2);
+}
+
+.login-link a,
+.submit-btn,
+.radio-option label {
+    cursor: pointer;
+}
+
+/* Add these media queries at the end of the file */
+
+@media screen and (max-width: 1440px) {
+    .text h2 {
+        font-size: 4.5rem;
+    }
+    
+    .text p {
+        font-size: 1.2rem;
+    }
+
+    .login-box {
+        width: min(90vw, 400px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .verification-options {
+        margin: 15px 0;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .radio-option {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .radio-option label {
+        padding: 10px 15px;
+        justify-content: center;
+    }
+
+    .text h2 {
+        font-size: 4rem;
+    }
+    
+    .text p {
+        font-size: 1.1rem;
+    }
+
+    [class*="mountain-"], 
+    [class*="fog-"] {
+        scale: 0.9;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .login-box {
+        width: 90%;
+        max-width: 400px;
+        padding: 30px;
+        top: 65%;
+    }
+
+    .parallax {
+        scale: 0.85;
+    }
+
+    .text h2 {
+        font-size: 3.5rem;
+    }
+    
+    .text p {
+        font-size: 1rem;
+    }
+
+    .user-box input,
+    .user-box label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+        top: 60%;
+    }
+
+    .login-box h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .verification-options p {
+        font-size: 14px;
+    }
+
+    .radio-option label {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .parallax {
+        scale: 0.7;
+    }
+
+    .text {
+        top: 20%;
+    }
+
+    .text h2 {
+        font-size: 3rem;
+    }
+    
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text h2 {
+        font-size: 2.5rem;
+    }
+    
+    .text p {
+        font-size: 0.8rem;
+    }
+
+    .login-box {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .login-box {
+        position: relative;
+        transform: none;
+        margin: 100px auto;
+        top: 0;
+    }
+
+    .text {
+        position: relative;
+        top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .login-box {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    input, button, a {
+        touch-action: manipulation;
+    }
+
+    .radio-option label {
+        min-height: 44px;
+    }
+
+    .submit-btn {
+        min-height: 44px;
+    }
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+    .parallax {
+        transition: none;
+    }
+
+    .radio-option label,
+    .submit-btn,
+    .user-box input,
+    .user-box label {
+        transition-duration: 0.1s;
+    }
+}

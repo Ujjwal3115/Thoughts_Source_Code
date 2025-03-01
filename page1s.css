@@ -1,0 +1,530 @@
+*,
+*::before,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+        font-family: "League Spartan", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding:  0.9rem 0;
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+main {
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99)
+}
+
+.bg-img {
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 350px);
+    left: calc(50% - 40px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+} 
+
+
+.fog-7 {
+    position: absolute;
+    z-index: 2; 
+    width: 1900px;
+    top: calc(50% - 100px);
+    left: calc(50% + 700px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-10 {
+    position: absolute;
+    z-index: 3; 
+    width: 892px;
+    top: calc(50% + 69px);
+    left: calc(50% + 230px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-6 {
+    position: absolute;
+    z-index: 4; 
+    width: 100%;
+    top: calc(50% + 85px);
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-9 {
+    position: absolute;
+    z-index: 5; 
+    width: 470px;
+    top: calc(50% + 113px);
+    left: calc(50% - 457px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-8 {
+    position: absolute;
+    z-index: 6; 
+    width: 880px;
+    top: calc(50% + 120px);
+    left: calc(50% - 202px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-5 {
+    position: absolute;
+    z-index: 7; 
+    width: 450px;
+    top: calc(50% + 160px);
+    left: calc(50% + 20px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-7 {
+    position: absolute;
+    z-index: 8; 
+    width: 538px;
+    top: calc(50% + 123px);
+    left: calc(50% + 305px);
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 123px);
+    left: calc(50% - 305px);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #e3ff73;
+    transition: color 0.3s ease;
+}
+
+.text h2 {
+    font-weight: 600;
+    font-size: 9rem;
+}
+
+.text p {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.mountain-6 {
+    position: absolute;
+    z-index: 10; 
+    width: 408px;
+    top: calc(50% + 60px);
+    left: calc(50% + 590px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-4 {
+    position: absolute;
+    z-index: 11; 
+    width: 590px;
+    top: calc(50% + 223px);
+    left: calc(50% - 60px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-5 {
+    position: absolute;
+    z-index: 12; 
+    width: 625px;
+    top: calc(50% + 250px);
+    left: calc(50% + 130px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-3 {
+    position: absolute;
+    z-index: 13; 
+    width: 1600px;
+    top: calc(50% + 110px);
+    left: calc(50% - 15px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-4 {
+    position: absolute;
+    z-index: 14; 
+    width: 780px;
+    top: calc(50% + 196px);
+    left: calc(50% - 381.5px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-3 {
+    position: absolute;
+    z-index: 15; 
+    width: 500px;
+    top: calc(50% + 196px);
+    left: calc(50% + 750px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-2 {
+    position: absolute;
+    z-index: 16; 
+    width: 200px;
+    top: calc(50% + 196px);
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-2 {
+    position: absolute;
+    z-index: 17; 
+    width: 690px;
+    top: calc(50% + 155px);
+    left: calc(50% + 400px);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-1 {
+    position: absolute;
+    z-index: 18; 
+    width: 550px;
+    top: calc(50% + 80px);
+    left: calc(50% - 620px);
+    transform: translate(-50%, -50%);
+}
+
+.sun-rays {
+    position: absolute;
+    z-index: 19;
+    width: 595px;
+    top:0;
+    right:0; 
+}
+
+.black-shadow {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.fog-1 {
+    position: absolute;
+    z-index: 21; 
+    width: 1600px;
+    top: calc(100% - 355px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vignette {
+    position: absolute;
+    z-index: 22;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.65)100%);
+
+}
+
+
+
+
+/* theme button  */
+.theme-toggle {
+    z-index: 24;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sun-icon {
+    display: none;
+}
+
+.moon-icon {
+    display: block;
+}
+
+/* Add styles for dark theme */
+body.dark-theme .theme-toggle .sun-icon {
+    display: block;
+}
+
+body.dark-theme .theme-toggle .moon-icon {
+    display: none;
+}
+
+
+
+
+/* Login box  */
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 300px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 23;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #e3ff73;
+    font-size: 12px;
+}
+
+.login-box a {
+    position: center;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+
+
+}
+
+.login-box a:hover {
+    background: #e3ff73d2;
+    color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #e3ff73d2,
+                0 0 25px #e3ff73d2,
+                0 0 50px #e3ff73d2,
+                0 0 100px #e3ff73d2;
+}
+
+.login-box a span {
+    position: center;
+    display: block;
+}
+
+.login-box .submit-btn {
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #e3ff73;
+}
+
+.forgot-password{
+    position: relative;
+    padding: 0;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-link b {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-link b span{
+    color: #e3ff73;
+
+}
+
+
+.forgot-password:hover,
+.signup-link b:hover {
+    text-decoration: underline;
+}
+
+/* Add these media queries at the end of the file */
+@media screen and (max-width: 1440px) {
+    .text h2 {
+        font-size: 7rem;
+    }
+    
+    .text p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text h2 {
+        font-size: 6rem;
+    }
+    
+    .text p {
+        font-size: 1.6rem;
+    }
+    
+    .login-box {
+        width: 350px;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        top: 25%; /* Move text up to 25% from the top */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .text h2 {
+        font-size: 4.5rem;
+    }
+    
+    .text p {
+        font-size: 1.4rem;
+    }
+    
+    .login-box {
+        width: 90%;
+        max-width: 400px;
+        right: 50%;
+        top: 65%; /* Move login box down to 65% from the top */
+        transform: translate(50%, -50%);
+    }
+
+    .parallax {
+        scale: 0.85;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text {
+        top: 20%; /* Move text even higher on smaller screens */
+    }
+    
+    .text h2 {
+        font-size: 3.5rem;
+    }
+    
+    .text p {
+        font-size: 1.2rem;
+    }
+    
+    .login-box {
+        padding: 20px;
+        top: 60%; /* Adjust login box position */
+    }
+
+    .parallax {
+        scale: 0.7;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text h2 {
+        font-size: 3rem;
+    }
+    
+    .text p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .login-box {
+        transform: translate(50%, -45%);
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}
